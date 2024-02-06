@@ -38,7 +38,7 @@ nav ul li a:hover {
 .banner {
     object-fit: cover;
     height: 600px;
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: #FFFFFF;
     padding: 60px;
