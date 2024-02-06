@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: SF Pro text, PingFang SC, MiSans, HarmonyOSHans, Segoe UI, Arial, Microsoft YaHei, "\5B8B\4F53";
+    background-color: #F7F7F7;
+}
+
+nav {
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: #3B3B3B;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #F7F7F7;
+}
+
+.banner {
+    object-fit: cover;
+    height: 600px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    padding: 60px;
+    text-align: center;
+    background-image: url(./images/banner0.png);
+}
+
+.banner {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1 {
+    font-size: 70px;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.banner p {
+    font-size: 15px;
+    color: #f2f2f2;
+    line-height: 35px;
+    text-shadow: 0 0 3 white;
+}
+
+.intro {
+    background-color: #FFFFFF;
+    margin: 30px auto;
+    padding: 16px;
+}
+
+.intro h2 {
+    font-size: 25px;
+    color: #3B3B3B;
+}
+
+.intro p {
+    font-size: 15px;
+    color: #3B3B3B;
+    line-height: 25px;
+}
+
+.intro a {
+    color: #5f9aff;
+    text-decoration: none; 
+}
