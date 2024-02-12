@@ -19,21 +19,21 @@
         </nav>
     </div>
     
-<div id="markdown-content1"></div>
-<div id="markdown-content2"></div>
-<div id="markdown-content3"></div>
+    <div id="markdown-content1"></div>
+    <div id="markdown-content2"></div>
+    <div id="markdown-content3"></div>
 
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-<script>
-async function loadAndDisplayMarkdown(selector, markdownPath) {
-    const response = await fetch(markdownPath);
-    const mdText = await response.text();
-    document.querySelector(selector).innerHTML = marked(mdText);
-}
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        async function loadAndDisplayMarkdown(selector, markdownPath) {
+            const response = await fetch(markdownPath);
+            const mdText = await response.text();
+            document.querySelector(selector).innerHTML = marked(mdText);
+        }
 
-loadAndDisplayMarkdown("#markdown-content1", "markdown/1.md");
+        loadAndDisplayMarkdown("#markdown-content1", "markdown/1.md");
 
-</script>
+    </script>
 
 </body>
 </html>
