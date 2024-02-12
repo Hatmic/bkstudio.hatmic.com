@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +7,73 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="popup" id="popup" style="box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);">
+        <!-- 弹窗内容 -->
+        <div class="popup-text">
+            <div style="font-size: 20px;">请到 <a href="activities.html">活动</a> 区了解更多</div>
+            <div style="color: #afafaf;">
+                <script>
+                    var now = new Date();
+                    document.write(now.toLocaleString());
+                    document.write("<br>")
+                    var nowh = now.getHours();
+                    if (nowh >= 20){
+                        document.write("很晚了，注意休息噢");
+                    }
+                    else {
+                        document.write("记得看时间噢")
+                    }
+                    document.write("<br><br>")
+                    document.write("点击任意位置关闭弹窗")
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 显示弹窗
+        function showPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+            popup.classList.remove("hide");
+
+            // 鼠标点击事件处理函数
+            function handleClick() {
+                hidePopup();
+                document.removeEventListener("click", handleClick);
+            }
+
+            document.addEventListener("click", handleClick);
+        }
+
+        // 隐藏弹窗
+        function hidePopup() {
+            var popup = document.getElementById("popup");
+            popup.classList.add("hide");
+            setTimeout(function() {
+                popup.style.display = "none";
+            }, 500); // 0.5秒后完全隐藏弹窗
+        }
+
+        // 调用显示弹窗函数
+        showPopup();
+    </script>
+    
     <!-- 导航栏 -->
     <div>
         <nav>
             <ul>
-                <li><a href="index.html">首页</a></li>
-                <li><a href="#about">关于</a></li>
-                <li><a href="activities.html">活动</a></li>
-                <li><a href="#forum">论坛</a></li>
+                <li><a href="index.html" target="_blank">首页</a></li>
+                <li><a href="#about" target="_blank">关于</a></li>
+                <li><a href="activities.html" target="_blank">活动</a></li>
+                <li><a href="#forum" target="_blank">论坛</a></li>
             </ul>
         </nav>
     </div>
 
     <!-- banner -->
     <div class="banner">
-        <div>
+        <div class="popup-text">
             <h1>BKStudio</h1>
             <br>
             <p>
@@ -31,7 +83,7 @@
                 <br>
                 我们的故事起笔于 2022 年 2 月 8 日
                 <br>
-                在编程猫社区，我们勇敢地迈出第一步
+                在这一天，我们勇敢地迈出第一步
                 <br>
                 至今已经两年了啊
                 <br>
@@ -59,12 +111,17 @@
             夜雨这个名字是突发奇想的，很多人把他和《夜雨寄北》联系到一起，所以我对这首诗的印象也很深刻。
         </p>
         <p>
-            我们从很冷清的工作室逐渐热闹起来，成为过编程猫最活跃的工作室。这离不开每一位活跃的积极创作的成员的付出。
+            我们从很冷清的工作室逐渐热闹起来。这离不开每一位活跃的积极创作的成员的付出。
             我们将我们的激情灌输到作品中，享受创作的快乐，这是编程猫带给我们最纯粹、最珍贵的东西吧。
-            很多成员已经不再在编程猫创作，去发展新的爱好，希望你们可以为自己的热爱坚持下去！
+            很多成员已经不再做原先的创作，去发展新的爱好，无论怎样，也要坚持自己的热爱啊！
         </p>
         <p>
-            夜雨的岛三分部产出了不少优质的作品，部长由 <a href="https://dao3.fun/profile/13055503">shen梦</a> 担任。
+            我们在图形化分区有着很多令人瞩目的创作者。如：<a href="https://shequ.codemao.cn/user/9209745">喵喵酱y</a>，<a href="https://shequ.codemao.cn/user/2311510">Victor_Li</a>，<a href="https://shequ.codemao.cn/user/1208758347">刘芊n</a>，<a href="https://shequ.codemao.cn/user/703565">极光</a>，<a href="https://shequ.codemao.cn/user/11260611">.-.-.</a>，<a href="https://shequ.codemao.cn/user/10645458">[YOLO]UT3D慈善家</a>，<a href="https://shequ.codemao.cn/user/945279">BKS乄MCproblem</a>，<a href="https://shequ.codemao.cn/user/5340900">BKS中立的玩家</a>，<a href="https://shequ.codemao.cn/user/8564508">星辰THN</a>，<a href="https://shequ.codemao.cn/user/227461617">有只兔子叫雪儿</a>，<a href="https://shequ.codemao.cn/user/1615574337">初云</a>，<a href="https://shequ.codemao.cn/user/10328407">.某华.</a> 等等。
+            不同的创作者擅长做不同类型的作品，有着不同的创作风格。多元的创作风格是 BKStudio 的亮点之一。
+            欢迎新的活跃的创作者加入到我们的工作室！
+        </p>
+        <p>
+            夜雨的岛三分部也产出了不少优质的作品，部长由 <a href="https://dao3.fun/profile/13055503">shen梦</a> 担任。
             夜雨工作室岛三分部，又名东方梦工作室，代表作是 <a href="https://dao3.fun/exp/experience/detail/100063335">《剑圣》</a>。
             我们参与多个重大地图的合作，擅长代理地图，如：<a href="https://dao3.fun/exp/experience/detail/100031807">《盛世江湖》</a><a href="https://dao3.fun/exp/experience/detail/100038482">《斗罗大陆》</a>《天启大陆》《star rinh city》《地铁跑酷》等，快来支持我们的好作品吧！
         </p>

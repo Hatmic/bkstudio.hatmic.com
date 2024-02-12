@@ -1,6 +1,75 @@
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 600px;
+    height: 300px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    opacity: 0;
+    animation: popup-in 0.5s ease forwards;
+}
+
+.popup-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    width: 100%;
+    height: 100%;
+}
+
+.popup-text p {
+    margin: 0;
+}
+
+.popup.hide {
+    animation: popup-out 0.5s ease forwards;
+}
+
+@keyframes popup-in {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes popup-out {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+}
+
+div {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+h1 {
+    -webkit-user-select: text; /* Safari */
+    -moz-user-select: text; /* Firefox */
+    -ms-user-select: text; /* Internet Explorer/Edge */
+    user-select: text;
+}
+
 body {
     margin: 0;
-    font-family: SF Pro text, PingFang SC, MiSans, HarmonyOSHans, Segoe UI, Arial, Microsoft YaHei, "\5B8B\4F53";
+    font-family: -apple-system, BlinkMacSystem, SF Pro text, PingFang SC, Helvetica, Helvetica Neue, MiSans, HarmonyOSHans, Segoe UI, Arial, Microsoft YaHei, sans-serif, "\5B8B\4F53";
     background-color: #F7F7F7;
 }
 
@@ -83,7 +152,7 @@ nav ul li a:hover {
     line-height: 25px;
 }
 
-.intro a {
+a {
     color: #5f9aff;
     text-decoration: none; 
 }
