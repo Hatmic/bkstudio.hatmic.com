@@ -1,0 +1,19 @@
+# GitHub 使用优化建议
+
+1.
+
+>Q:
+>>英文不好，有办法看到中文页面嘛？
+
+>A:
+>> 有的。对于 Edge 浏览器，可以在 Microsoft Store 中下载篡改猴 tampermonkey 扩展；Google 浏览器可以在 [http://www.lsdaily.com/](http://www.lsdaily.com/) 下载。
+点浏览器右上角三个点，随后点开扩展，要将你下载的压缩包解压，把文件拖进去。谷歌浏览器需要选中开发者模式！
+在 [https://greasyfork.org/zh-CN/scripts/435208-github-中文化插件](https://greasyfork.org/zh-CN/scripts/435208-github-中文化插件) 中安装，然后刷新 GitHub 页面就生效了。
+
+2.
+
+>Q:
+>> GitHub 常访问不上，有没有免费的加速器？
+
+>A:
+>> 有的，到 [https://uu.163.com/](https://uu.163.com/) 下载 uu 加速器，安装完成后在右上角搜索框搜索“学术”，点进去，跳转到一个页面后就生效了。
