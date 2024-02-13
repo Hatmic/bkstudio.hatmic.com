@@ -7,57 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- 弹窗 -->
     <div class="popup" id="popup" style="box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);">
         <!-- 弹窗内容 -->
         <div class="popup-text">
             <div style="font-size: 20px;">请到 <a href="activities.html">活动</a> 区了解更多</div>
             <div style="color: #afafaf;">
-                <script>
-                    var now = new Date();
-                    document.write(now.toLocaleString());
-                    document.write("<br>")
-                    var nowh = now.getHours();
-                    if (nowh >= 20){
-                        document.write("很晚了，注意休息噢");
-                    }
-                    else {
-                        document.write("记得看时间噢")
-                    }
-                    document.write("<br><br>")
-                    document.write("点击任意位置关闭弹窗")
-                </script>
+                <script src="script/Popup-time.js"></script>
             </div>
         </div>
     </div>
 
-    <script>
-        // 显示弹窗
-        function showPopup() {
-            var popup = document.getElementById("popup");
-            popup.style.display = "block";
-            popup.classList.remove("hide");
-
-            // 鼠标点击事件处理函数
-            function handleClick() {
-                hidePopup();
-                document.removeEventListener("click", handleClick);
-            }
-
-            document.addEventListener("click", handleClick);
-        }
-
-        // 隐藏弹窗
-        function hidePopup() {
-            var popup = document.getElementById("popup");
-            popup.classList.add("hide");
-            setTimeout(function() {
-                popup.style.display = "none";
-            }, 500); // 0.5秒后完全隐藏弹窗
-        }
-
-        // 调用显示弹窗函数
-        showPopup();
-    </script>
+    <script src="script/showPopup.js"></script>
     
     <!-- 导航栏 -->
     <div>
@@ -116,15 +78,61 @@
             很多成员已经不再做原先的创作，去发展新的爱好，无论怎样，也要坚持自己的热爱啊！
         </p>
         <p>
-            我们在图形化分区有着很多令人瞩目的创作者。如：<a href="https://shequ.codemao.cn/user/9209745">喵喵酱y</a>，<a href="https://shequ.codemao.cn/user/2311510">Victor_Li</a>，<a href="https://shequ.codemao.cn/user/1208758347">刘芊n</a>，<a href="https://shequ.codemao.cn/user/703565">极光</a>，<a href="https://shequ.codemao.cn/user/11260611">.-.-.</a>，<a href="https://shequ.codemao.cn/user/10645458">[YOLO]UT3D慈善家</a>，<a href="https://shequ.codemao.cn/user/945279">BKS乄MCproblem</a>，<a href="https://shequ.codemao.cn/user/5340900">BKS中立的玩家</a>，<a href="https://shequ.codemao.cn/user/8564508">星辰THN</a>，<a href="https://shequ.codemao.cn/user/227461617">有只兔子叫雪儿</a>，<a href="https://shequ.codemao.cn/user/1615574337">初云</a>，<a href="https://shequ.codemao.cn/user/10328407">.某华.</a> 等等。
+            我们在图形化分区有着很多令人瞩目的创作者。如：<a href="https://shequ.codemao.cn/user/9209745">喵喵酱y</a>，<a href="https://shequ.codemao.cn/user/2311510">Victor_Li</a>，<a href="https://shequ.codemao.cn/user/1208758347">刘芊n</a>，<a href="https://shequ.codemao.cn/user/703565">极光</a>，<a href="https://shequ.codemao.cn/user/11260611">.-.-.</a>，<a href="https://shequ.codemao.cn/user/10645458">[YOLO]UT3D慈善家</a>，<a href="https://shequ.codemao.cn/user/945279">BKS乄MCproblem</a>，<a href="https://shequ.codemao.cn/user/5340900">BKS中立的玩家</a>，<a href="https://shequ.codemao.cn/user/8564508">星辰THN</a>，<a href="https://shequ.codemao.cn/user/227461617">有只兔子叫雪儿</a>，<a href="https://shequ.codemao.cn/user/1615574337">初云</a>，<a href="https://shequ.codemao.cn/user/10328407">.某华.</a>，<a href="https://shequ.codemao.cn/user/12177317">BKS_一氧化二氢</a> 等等。
             不同的创作者擅长做不同类型的作品，有着不同的创作风格。多元的创作风格是 BKStudio 的亮点之一。
-            欢迎新的活跃的创作者加入到我们的工作室！
+            欢迎更多活跃的创作者加入到我们的工作室！
         </p>
         <p>
             夜雨的岛三分部也产出了不少优质的作品，部长由 <a href="https://dao3.fun/profile/13055503">shen梦</a> 担任。
             夜雨工作室岛三分部，又名东方梦工作室，代表作是 <a href="https://dao3.fun/exp/experience/detail/100063335">《剑圣》</a>。
             我们参与多个重大地图的合作，擅长代理地图，如：<a href="https://dao3.fun/exp/experience/detail/100031807">《盛世江湖》</a><a href="https://dao3.fun/exp/experience/detail/100038482">《斗罗大陆》</a>《天启大陆》《star rinh city》《地铁跑酷》等，快来支持我们的好作品吧！
         </p>
+    </div>
+
+    <!-- 作品展示 -->
+    <div class="work">
+        <h2>作品展示</h2>
+        <div class="work-center">
+            <!-- 豌豆头 -->
+            <div>
+                <h3>
+                    <a href="https://shequ.codemao.cn/work/208821108" target="_blank">豌豆头 - .某华.</a>
+                </h3>
+            </div>
+            <div>
+                <iframe src="https://nemo.codemao.cn/w/208821108" frameborder="0"></iframe>
+            </div>
+
+            <!-- 火柴人军事对决 -->
+            <div>
+                <h3>
+                    <a href="https://shequ.codemao.cn/work/134782098" target="_blank">火柴人军事对决 - 喵喵酱y</a>
+                </h3>
+            </div>
+            <div>
+                <iframe src="https://nemo.codemao.cn/w/134782098" frameborder="0"></iframe>
+            </div>
+
+            <!-- 生肖之争 -->
+            <div>
+                <h3>
+                    <a href="https://shequ.codemao.cn/work/36339001" target="_blank">生肖之争 - 极光</a>
+                </h3>
+            </div>
+            <div>
+                <iframe src="https://nemo.codemao.cn/w/36339001" frameborder="0"></iframe>
+            </div>
+            
+            <!-- Circle OS -->
+            <div>
+                <h3>
+                    <a href="https://shequ.codemao.cn/work/214748821" target="_blank">Circle OS 15 - BKS_一氧化二氢</a>
+                </h3>
+            </div>
+            <div>
+                <iframe src="https://player.codemao.cn/new/214748821" frameborder="0"></iframe>
+            </div>
+        </div>
     </div>
 </body>
 </html>
