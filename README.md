@@ -1,6 +1,6 @@
 # BKStudio
 
-这里是 BKStudio 官网，代码由 [ShokaSeiu](https://b23.tv/OYAfqIc) 编写，插图由 Ionc04 提供。
+这里是 BKStudio 官网，代码由 [ShokaSeiu（Hatmic）](https://b23.tv/OYAfqIc) 编写，插图由 Ionc04 提供。
 
 特别感谢 [Tolazyer](https://gitee.com/tolazyer) 在代码编写上提供的诸多帮助，为我修改了很多不妥之处❤
 
