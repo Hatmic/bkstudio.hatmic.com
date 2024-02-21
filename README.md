@@ -10,7 +10,7 @@
 
 特别感谢 T_MKT 给出了许多在界面设计方面的建议，尤其是在字体选择方面给出了帮助🌹
 
-特别感谢奶茶妹妹 [Coppist](https://gitee.com/coppist) 帮助我修改代码，给予我支持的力量😘
+特别感谢奶茶妹妹 [Coppist](https://gitee.com/coppist) 在 UI 设计方面给我的启发，帮助我修改代码，给予我支持的力量😘
 
 感谢 BKStudio 工作室的所有成员，支撑着这个有爱的团体！
 
