@@ -16,4 +16,10 @@
 
 ## 简述手册
 
-我们的页面通过 GitHub Pages 展示在 [hatmic.github.io/bkstudio](hatmic.github.io/bkstudio) 上
+我们的页面通过 GitHub Pages 展示在 [hatmic.github.io/bkstudio](hatmic.github.io/bkstudio) 上。
+
+我们的重要公告将发布在 [https://github.com/Hatmic/bkstudio/discussions/1](https://github.com/Hatmic/bkstudio/discussions/1) 帖子的回帖中，若有任何问题，请回复我们的回帖。
+
+在体验上的任何反馈和用户讨论的区域请在 [https://github.com/Hatmic/bkstudio/discussions/2](https://github.com/Hatmic/bkstudio/discussions/2) 回帖讨论。
+
+
