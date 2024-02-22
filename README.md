@@ -2,7 +2,7 @@
 
 ## 创作团队 & 特别感谢
 
-这里是 BKStudio 官网，代码由 [ShokaSeiu（Hatmic）](https://b23.tv/OYAfqIc) 编写。
+这里是 BKStudio 官网，代码由 [ShokaSeiu](https://b23.tv/OYAfqIc)[（Hatmic）](https://github.com/Hatmic) 编写。
 
 官网中的插图由我们的工作室副室长 Ionc04 绘制，他一直为工作室的建设做出宝贵的贡献！
 
